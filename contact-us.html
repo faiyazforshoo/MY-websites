@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mobshi Computers</title>
+    <style>
+        :root {
+            --primary: #4a0e78;
+            --primary-light: #6b24a0;
+            --secondary: #e0c6ff;
+            --background: #f8f4ff;
+            --text: #333333;
+            --white: #ffffff;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background-color: var(--primary);
+            padding: 1rem;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 0;
+        }
+
+        main {
+            padding-top: 80px;
+            min-height: calc(100vh - 80px - 60px);
+            background-image: url(mobshi.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 500px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid var(--primary);
+            border-radius: 4px;
+            font-weight: bold;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--secondary);
+        }
+
+        button {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--primary-light);
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="container">
+            <a href="team.html" class="logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mobsi%20.jpg-VKUK4BbY2EWEOWLVjRQwSEfqST6Hkv.jpeg" alt="Mobshi Computers Logo">
+                <span>Mobshi Computers</span>
+            </a>
+            <div class="nav-links">
+                <a href="team.html">Home</a>
+                <a href="IT katana.html">IT Services</a>
+                <a href="cyber-services.html">Cyber Services</a>
+                <a href="government services.html">Government Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="team.html">Home</a>
+        <a href="IT katana.html">IT Services</a>
+        <a href="cyber-services.html">Cyber Services</a>
+        <a href="government services.html">Government Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        
+    <iframe
+    id="JotFormIFrame-243395478358068"
+    title="Contact Us"
+    onload="window.parent.scrollTo(0,0)"
+    allowtransparency="true"
+    allow="geolocation; microphone; camera; fullscreen"
+    src="https://form.jotform.com/243395478358068"
+    frameborder="0"
+    style="min-width:100%;max-width:100%;height:539px;border:none;"
+    scrolling="no"
+  >
+  </iframe>
+  <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+  <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-243395478358068']", "https://form.jotform.com/")</script>
+  
+      <!--- <div class="container">
+            <form class="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mobshi Computers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            // Close mobile menu when a link is clicked
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

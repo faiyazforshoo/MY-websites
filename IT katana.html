@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Services - Mobshi Computers</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f4ff;
+            color: #333;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        header {
+            background-color: #4a0e78;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #e0c6ff;
+        }
+        .background-logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 0;
+        }
+        main {
+            padding-top: 100px;
+            position: relative;
+            min-height: calc(100vh - 100px - 80px);
+        }
+        .page-title {
+            text-align: center;
+            color: #4a0e78;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a0e78, #8f44fd);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        .service-card h2 {
+            color: #4a0e78;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .service-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .service-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #4a0e78;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .service-link:hover {
+            background-color: #3c0c62;
+        }
+        footer {
+            background-color: #4a0e78;
+            color: #ffffff;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            .background-logo {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="mobshi.jpg"" class="background-logo">
+   
+    <header>
+        <nav class="container">
+            <a href="team.html" class="logo">
+                <img src="mobshi.jpg"Mobshi Computers Logo">
+                <span>Mobshi Computers</span>
+            </a>
+            <div class="nav-links">
+                <a href="team.html">Home</a>
+                <a href="IT katana.html">IT Services</a>
+                <a href="cyber-services.html">Cyber Services</a>
+                <a href="government services.html>">Government services</a>
+                <a href="#about">About</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>IT Services</h1>
+                <p>Professional technology solutions for your business needs</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Laptop Purchases</h3>
+                    <div class="service-details">
+                        Get quality laptops at competitive prices with warranty and after-sales support.
+                    </div>
+                    <ul class="service-features">
+                        <li>Wide range of brands</li>
+                        <li>Customization options</li>
+                        <li>Technical consultation</li>
+                        <li>Warranty support</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Email Activation</h3>
+                    <div class="service-details">
+                        Professional email setup and configuration services for businesses.
+                    </div>
+                    <ul class="service-features">
+                        <li>Business email setup</li>
+                        <li>Domain configuration</li>
+                        <li>Security setup</li>
+                        <li>Training provided</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <div class="service-details">
+                        Custom website design and development for your business.
+                    </div>
+                    <ul class="service-features">
+                        <li>Responsive design</li>
+                        <li>E-commerce solutions</li>
+                        <li>SEO optimization</li>
+                        <li>Maintenance support</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Business Registration</h3>
+                    <div class="service-details">
+                        Complete business registration and setup services.
+                    </div>
+                    <ul class="service-features">
+                        <li>Company registration</li>
+                        <li>Documentation support</li>
+                        <li>Legal compliance</li>
+                        <li>Business licensing</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Software Solutions</h3>
+                    <div class="service-details">
+                        Custom software development and implementation.
+                    </div>
+                    <ul class="service-features">
+                        <li>Business software</li>
+                        <li>Custom applications</li>
+                        <li>Integration services</li>
+                        <li>Technical support</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>WiFi Installation</h3>
+                    <div class="service-details">
+                        Professional WiFi setup and network configuration.
+                    </div>
+                    <ul class="service-features">
+                        <li>Network planning</li>
+                        <li>Security setup</li>
+                        <li>Coverage optimization</li>
+                        <li>Maintenance support</li>
+                    </ul>
+                    <a href="https://wa.me/+254715376223?text=I'm%20interested%20in%20your%20Printing%20%26%20Photocopy%20service" class="service-link" target="_blank" rel="noopener noreferrer">View Service</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+    </a>
+        <div class="container">
+            <p>&copy; 2024 Mobshi Computers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add hover effect to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
